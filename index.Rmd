@@ -1,6 +1,5 @@
 ---
-title: "BIO/DSP 439/539 URI Spring 2019"
-subtitle: "Big Data Analysis"
+title: "Data Wrangling and Tools for Genomic Analysis"
 author: "Instructor: Rachel Schwartz"
 output: 
   html_document:
@@ -9,26 +8,18 @@ output:
     toc_float: true
     theme: cosmo
 ---
-<a href="https://github.com/rachelss/BigDataAnalysis19"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/rachelss/LaSabana_Genomics"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
 ## Overview
 
-This course is intended to help you learn how to analyze large datasets correctly and efficiently. We will discuss methods for analysis of big data, and how to get research done more efficiently using basic scientific computing skills. This course will consist of limited lecture time and extensive hands-on time. We will cover data management, statistical methods, task automation, and how to make data analysis clear and reproducible. No prior programming experience is required. Although most of the data will be biological or environmental, the material learned will be fully translatable to other fields.
+This course will introduce attendees with a biology background to working with genomic data. The course will provide background on the process and value in sequencing genomes, as well as useful and important applications of genome sequencing. Participants will be introduced to large-scale data analysis on servers and in the cloud. Participants will also learn basic R scripting, and building efficient and automated workflows. Students will gain practical experience with command line computing for working on a server (Linux), running bioinformatics tools for genome assembly, read mapping, and variant calling. 
 
-## Course Goals
-At the end of this course students should be able to…
+No prior programming experience is required! A year or more of graduate school in a biological science is suggested. Faculty, postdocs, and research staff are more than welcome, as are researchers from industry.
 
-* understand methods to analyze large datasets reproducibly.
-* effectively manage and analyze data.
-* apply the tools learned in class to research.
 
 ## Student Learning Outcomes
-At the end of this course students should be able to…
+At the end of this course participants will:
 
-* write a script to visualize a dataset.
-* select appropriate statistical methods to produce unbiased results for a dataset.
-* document code so that it is readable to someone else.
-* **produce a completely replicable analysis associated with a research project for a dataset of any size.**
-* **produce a research paper directly incorporating results of analyses from code.**
-
-*bold items refer to goals for students in BIO 539.
+* understand the acquisition and application of genomic data and data analysis tools
+* be familiar with basic scripting on the command line to work on a high-performance computing server or in the cloud
+* be capable of basic manipulation of genomic sequence data with common bioinformatic tools on servers
