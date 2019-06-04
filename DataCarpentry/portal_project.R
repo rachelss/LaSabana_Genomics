@@ -50,5 +50,6 @@ surveys_complete <- surveys %>%
          !is.na(hindfoot_length),
          !is.na(sex),
          sex != "")
-  
+
+#drop all NAs - drop_na from tidyr  
 surveys_complete2 <- surveys %>% drop_na()
