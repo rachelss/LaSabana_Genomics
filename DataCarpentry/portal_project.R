@@ -65,3 +65,14 @@ species_complete_common <- surveys_complete2 %>%
 
 write_csv(species_complete_common,
           path = "processed_data/surveys_complete_common.csv")
+
+#load data w read_csv
+surveys_complete_common <- read_csv("processed_data/surveys_complete_common.csv")
+
+ggplot(data = surveys_complete_common,
+       aes(x = weight, y = hindfoot_length)) +
+  geom_point(alpha = .1, aes(color = species_id))
+
+ggplot(data = surveys_complete_common,
+       aes(x = weight, y = hindfoot_length)) +
+  geom_point(alpha = .1, color = "blue")
