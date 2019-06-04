@@ -58,4 +58,6 @@ surveys_complete2 <- surveys %>% drop_na()
 #1. find common species - more than 50 samples
 species_common <- surveys_complete2 %>% count(species_id) %>%
   filter(n>50)
-  
+#2. filter whole data frame based on whether species
+# is in list of common species
+species_complete_common <- surveys_complete2  
