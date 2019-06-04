@@ -62,3 +62,6 @@ species_common <- surveys_complete2 %>% count(species_id) %>%
 # is in list of common species
 species_complete_common <- surveys_complete2 %>%
   filter(species_id %in% species_common$species_id)
+
+write_csv(species_complete_common,
+          path = "processed_data/surveys_complete_common.csv")
