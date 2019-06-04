@@ -45,4 +45,10 @@ surveys_weightkg <- surveys %>%
 
 #Challenge: get a clean dataset (for plotting)
 #filter out cases where weight, hindfoot_length, or sex are NA
-surveys_complete <- 
+surveys_complete <- surveys %>%
+  filter(!is.na(weight),
+         !is.na(hindfoot_length),
+         !is.na(sex),
+         sex != "")
+  
+surveys_complete2 <- surveys %>% drop_na()
