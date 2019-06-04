@@ -60,4 +60,5 @@ species_common <- surveys_complete2 %>% count(species_id) %>%
   filter(n>50)
 #2. filter whole data frame based on whether species
 # is in list of common species
-species_complete_common <- surveys_complete2  
+species_complete_common <- surveys_complete2 %>%
+  filter(species_id %in% species_common$species_id)
