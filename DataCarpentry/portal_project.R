@@ -69,10 +69,21 @@ write_csv(species_complete_common,
 #load data w read_csv
 surveys_complete_common <- read_csv("processed_data/surveys_complete_common.csv")
 
+#basic gglot with color in aes in geom_point layer only
 ggplot(data = surveys_complete_common,
        aes(x = weight, y = hindfoot_length)) +
   geom_point(alpha = .1, aes(color = species_id))
+#can also put color in aes in main plot
 
+#color in geom_point but not aes
 ggplot(data = surveys_complete_common,
        aes(x = weight, y = hindfoot_length)) +
   geom_point(alpha = .1, color = "blue")
+
+plot_weight_hind <- ggplot(data = surveys_complete_common,
+       aes(x = weight, y = hindfoot_length))
+
+plot_weight_hind + 
+  geom_point(aes(color=species_id))
+
+#Challenge: plot weight as a function of species_id
