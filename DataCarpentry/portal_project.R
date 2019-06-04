@@ -1,5 +1,7 @@
 download.file(url = "https://ndownloader.figshare.com/files/2292169",
               destfile = "data/portal_data.csv")
+#initial read of surveys data
+#read csv file (local - use a relative path)
 surveys <- read.csv("data/portal_data.csv")
 head(surveys)
 str(surveys)
