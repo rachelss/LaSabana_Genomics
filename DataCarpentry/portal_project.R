@@ -105,8 +105,10 @@ ggplot(yearly_counts,
 #plot each species with sex separately
 yearly_counts_sex <- surveys_complete_common %>%
   count(year,species_id,sex)
-ggplot(yearly_counts_sex,
+plot_year_count_sex <- ggplot(yearly_counts_sex,
        aes(x = year, y = n, color = sex))+
   geom_line() + facet_wrap(~species_id) +
   theme_bw() +
   theme(panel.grid = element_blank())
+ggsave(plot = plot_year_count_sex, width = 9, height = 6,
+       filename = "figures/plot_year_count_sex.pdf")
