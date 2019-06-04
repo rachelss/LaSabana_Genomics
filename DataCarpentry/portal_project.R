@@ -87,3 +87,6 @@ plot_weight_hind +
   geom_point(aes(color=species_id))
 
 #Challenge: plot weight as a function of species_id
+ggplot(surveys_complete_common,
+       aes(x = species_id, y = weight)) +
+  geom_point()
