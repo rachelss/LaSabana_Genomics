@@ -42,3 +42,7 @@ surveys %>% filter(is.na(date)) %>% select(year,month,day) %>% head()
 surveys_weightkg <- surveys %>% 
   filter(is.na(date)) %>% 
   mutate(weight_kg = weight/1000)
+
+#Challenge: get a clean dataset (for plotting)
+#filter out cases where weight, hindfoot_length, or sex are NA
+surveys_complete <- 
