@@ -12,6 +12,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Prior to workshop day 1 (June 4)
+### Prior to workshop day 1 (June 3)
 * [Read Software Carpentry Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html)
 * [Follow setup instructions for R](https://datacarpentry.org/r-socialsci/setup.html)
+
+### Day 1 (June 4)
+* [Slides](https://docs.google.com/presentation/d/1l-84JaWBtBrbY-ts3rnKypRLO8YF0skyCHQfkhMPWZE/edit?usp=sharing)
+* [Data Carpenty materials](https://datacarpentry.org/R-ecology-lesson/index.html)
+* Location of data: url="https://ndownloader.figshare.com/files/2292169"
