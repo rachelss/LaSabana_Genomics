@@ -38,3 +38,7 @@ head(select(surveys, species_id, weight))
 surveys %>% head() #same as head(surveys)
 surveys %>% filter(is.na(date)) %>% head()
 surveys %>% filter(is.na(date)) %>% select(year,month,day) %>% head()
+
+surveys_weightkg <- surveys %>% 
+  filter(is.na(date)) %>% 
+  mutate(weight_kg = weight/1000)
