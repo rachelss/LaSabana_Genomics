@@ -89,4 +89,11 @@ plot_weight_hind +
 #Challenge: plot weight as a function of species_id
 ggplot(surveys_complete_common,
        aes(x = species_id, y = weight)) +
-  geom_point()
+  geom_jitter(alpha = .1, 
+              aes(color = plot_type)) + 
+  geom_violin()
+
+#Challenge:
+#how many of each species are caught each year
+
+#plot the number of each spp as a function of time
