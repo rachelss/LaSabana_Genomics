@@ -112,3 +112,11 @@ plot_year_count_sex <- ggplot(yearly_counts_sex,
   theme(panel.grid = element_blank())
 ggsave(plot = plot_year_count_sex, width = 9, height = 6,
        filename = "figures/plot_year_count_sex.pdf")
+
+yearly_counts_sex$species_id <- as.factor(yearly_counts_sex$species_id)
+levels(yearly_counts_sex$species_id) <- c("DM2", "DO2", "DS2", "NL2", "OL2", "OT", "PB", "PE", "PF", "PM", "PP", "RF", "RM", "SH")
+plot_year_count_sex <- ggplot(yearly_counts_sex,
+                              aes(x = year, y = n, color = sex))+
+  geom_line() + facet_wrap(~species_id) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
