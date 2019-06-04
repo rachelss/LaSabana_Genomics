@@ -95,5 +95,18 @@ ggplot(surveys_complete_common,
 
 #Challenge:
 #how many of each species are caught each year
-
+yearly_counts <- surveys_complete_common %>%
+  count(year,species_id)
 #plot the number of each spp as a function of time
+ggplot(yearly_counts,
+       aes(x = year, y = n, color = species_id))+
+  geom_line()# + facet_wrap(~species_id)
+
+#plot each species with sex separately
+yearly_counts_sex <- surveys_complete_common %>%
+  count(year,species_id,sex)
+ggplot(yearly_counts_sex,
+       aes(x = year, y = n, color = sex))+
+  geom_line() + facet_wrap(~species_id) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
