@@ -3,6 +3,7 @@ download.file(url = "https://ndownloader.figshare.com/files/2292169",
 #initial read of surveys data
 #read csv file (local - use a relative path)
 surveys <- read.csv("data/portal_data.csv")
+#get first six lines
 head(surveys)
 str(surveys)
 dim(surveys)
