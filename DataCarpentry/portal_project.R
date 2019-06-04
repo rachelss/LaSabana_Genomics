@@ -53,3 +53,9 @@ surveys_complete <- surveys %>%
 
 #drop all NAs - drop_na from tidyr  
 surveys_complete2 <- surveys %>% drop_na()
+
+#get just species that are common
+#1. find common species - more than 50 samples
+species_common <- surveys_complete2 %>% count(species_id) %>%
+  filter(n>50)
+  
