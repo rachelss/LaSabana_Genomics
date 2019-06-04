@@ -1,0 +1,37 @@
+download.file(url = "https://ndownloader.figshare.com/files/2292169",
+              destfile = "data/portal_data.csv")
+surveys <- read.csv("data/portal_data.csv")
+head(surveys)
+str(surveys)
+dim(surveys)
+nrow(surveys)
+ncol(surveys)
+summary(surveys)
+sex <- surveys$sex
+nlevels(sex)
+year <- surveys$year
+year_factor <- as.factor(year)
+levels(year_factor)
+head(surveys)
+
+library(lubridate)
+surveys$date <- ymd(paste(surveys$year,surveys$month,surveys$day, sep="-"))
+summary(surveys$date)
+
+library(tidyverse)
+is.na(surveys$date) #get true/false of whether date is NA - returns vector
+head(filter(surveys, is.na(date))) #check why there are NA in date - note 31Sep
+#need to filter weird dates - see below
+
+#CHALLENGE: filter out data (and make a new dataset) where the date is wrong
+surveys_gooddates <- filter(surveys,!is.na(date))
+
+#CHALLENGE: filter data for rows where year == 1995
+filter(surveys, year == 1995)
+
+#hard ways to read - functions inside functions
+head(select(surveys, species_id, weight))
+#easier way - use pipes to send data to next command
+surveys %>% head() #same as head(surveys)
+surveys %>% filter(is.na(date)) %>% head()
+surveys %>% filter(is.na(date)) %>% select(year,month,day) %>% head()

@@ -20,3 +20,4 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Slides](https://docs.google.com/presentation/d/1l-84JaWBtBrbY-ts3rnKypRLO8YF0skyCHQfkhMPWZE/edit?usp=sharing)
 * [Data Carpenty materials](https://datacarpentry.org/R-ecology-lesson/index.html)
 * Location of data: url="https://ndownloader.figshare.com/files/2292169"
+* [Day's R script](DataCarpentry/portal_project.R)
