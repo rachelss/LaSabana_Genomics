@@ -154,3 +154,13 @@ surveys %>% filter(!is.na(hindfoot_length)) %>%
             min_hindfoot_length = min(hindfoot_length),
             max_hindfoot_length = max(hindfoot_length)) %>%
   arrange(desc(mean_hindfoot_length))
+
+#Challenge
+#find the genus and species_id of the heaviest (max weight)
+#individual each year
+
+#first get rid of NAs (weight)
+surveys %>% filter(!is.na(weight)) %>%
+group_by(year) %>% #group by year
+filter(weight == max(weight)) %>% #get the row with the max weight in each group
+select(year, genus, species_id, weight) #get year, genus, species_id, weight
