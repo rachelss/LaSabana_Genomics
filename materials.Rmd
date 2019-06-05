@@ -21,3 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Data Carpenty materials](https://datacarpentry.org/R-ecology-lesson/index.html)
 * Location of data: url="https://ndownloader.figshare.com/files/2292169"
 * [Day's R script](https://github.com/rachelss/LaSabana_Genomics/blob/master/DataCarpentry/portal_project.R)
+
+### Day 2 (June 5)
+* [Download spreadsheet data](https://ndownloader.figshare.com/files/2252083)
+* Database url: https://ndownloader.figshare.com/files/2292171
