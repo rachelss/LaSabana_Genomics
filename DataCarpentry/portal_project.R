@@ -120,3 +120,7 @@ plot_year_count_sex <- ggplot(yearly_counts_sex,
   geom_line() + facet_wrap(~species_id) +
   theme_bw() +
   theme(panel.grid = element_blank())
+
+#Day 2 of R
+#Challenge: how many individuals were caught in each plot
+
