@@ -216,3 +216,8 @@ mammals <- DBI::dbConnect(RSQLite::SQLite(),
 src_dbi(mammals)
 surveys_db <- tbl(mammals,"surveys")
 surveys_db %>% select(species_id,year, plot_id)
+nrow(surveys_db)
+
+#get samples weight <5, select a few cols
+surveys_db %>% filter(weight < 5) %>% select(species_id, year) %>%
+  collect()
