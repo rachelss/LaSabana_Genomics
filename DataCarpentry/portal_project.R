@@ -122,5 +122,19 @@ plot_year_count_sex <- ggplot(yearly_counts_sex,
   theme(panel.grid = element_blank())
 
 #Day 2 of R
-#Challenge: how many individuals were caught in each plot
+#Challenge: how many individuals were caught in each plot_id
+surveys %>% count(plot_id)
 
+#get mean weight for each species
+#this works for some species but produces NaN for others
+#surveys %>% group_by(species_id) %>%
+#  summarise(mean_weight = mean(weight, na.rm = TRUE))
+
+#how do we investigate NaN? pick one species w NaN for weight
+#get weights - observe NA - should filter in advance
+#filter(surveys,species_id=="CB") %>% select(weight) %>%
+#  unique()
+
+surveys %>% filter(!is.na(weight)) %>%
+  group_by(species_id) %>%
+  summarise(mean_weight = mean(weight))
