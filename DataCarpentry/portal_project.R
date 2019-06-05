@@ -232,4 +232,7 @@ colnames(species_db)
 rodents_per_plot <- left_join(surveys_db, species_db) %>% filter(taxa == "Rodent") %>%
   group_by(plot_id,year) %>% tally %>% collect()
 
-#
+#total number of rodents in each genus caught in different plot types
+left_join(surveys_db,plots_db) %>% left_join(species_db) %>%
+  filter(taxa == "Rodent") %>% group_by(genus,plot_type) %>%
+  tally %>% collect()
