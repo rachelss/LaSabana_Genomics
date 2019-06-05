@@ -145,3 +145,12 @@ surveys %>% filter(!is.na(weight)) %>%
             min_weight = min(weight),
             max_weight = max(weight)) %>%
   arrange(desc(mean_weight))
+
+#Challenge
+#find mean, min, max hindfoot_length for each species_id
+surveys %>% filter(!is.na(hindfoot_length)) %>%
+  group_by(species_id) %>%
+  summarise(mean_hindfoot_length = mean(hindfoot_length),
+            min_hindfoot_length = min(hindfoot_length),
+            max_hindfoot_length = max(hindfoot_length)) %>%
+  arrange(desc(mean_hindfoot_length))
