@@ -201,3 +201,7 @@ surveys_numsp_year_plot <- surveys %>% count(plot_id, year, species_id) %>%
 #each row is a unique year and plot_id
 surveys_numsp_year_plot_long <- surveys_numsp_year_plot %>%
   gather(year, number_spp_caught, -plot_id)
+
+surveys_long <- surveys %>%
+  gather(measurement, value, hindfoot_length:weight)
+
