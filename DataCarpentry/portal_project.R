@@ -196,3 +196,6 @@ surveys %>% group_by(plot_id, year) %>%
 
 surveys %>% count(plot_id, year, species_id) %>%
   count(plot_id, year) %>% spread(year,n)
+
+#Challenge
+#each row is a unique year and plot_id
