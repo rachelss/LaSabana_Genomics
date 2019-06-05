@@ -206,3 +206,13 @@ surveys_long <- surveys %>%
   gather(measurement, value, hindfoot_length:weight)
 
 
+#Databases (or multiple spreadsheets)
+#install.packages(c("dbplyr","RSQLite"))
+download.file(url = "https://ndownloader.figshare.com/files/2292171",
+              destfile = "data/portal_mammals.sqlite", mode = "wb")
+library(dbplyr)
+mammals <- DBI::dbConnect(RSQLite::SQLite(),
+                          "data/portal_mammals.sqlite")
+src_dbi(mammals)
+surveys_db <- tbl(mammals,"surveys")
+surveys_db %>% select(species_id,year, plot_id)
