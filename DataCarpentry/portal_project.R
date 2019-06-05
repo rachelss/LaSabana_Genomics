@@ -190,3 +190,9 @@ surveys_meanweight_species_plot_long2 <- surveys_meanweight_species_plot_wide %>
 #value is the number of species_id per plot
 #summarize first
 #use the function n_distinct (use ? for help as needed)
+surveys %>% group_by(plot_id, year) %>%
+  summarise(n_species = n_distinct(species_id)) %>%
+  spread(key = year, value = n_species)
+
+surveys %>% count(plot_id, year, species_id) %>%
+  count(plot_id, year) %>% spread(year,n)
