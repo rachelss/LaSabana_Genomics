@@ -175,4 +175,5 @@ surveys_meanweight_species_plot <- surveys %>%
 #now spread so people can read it
 surveys_meanweight_species_plot_wide <- surveys_meanweight_species_plot %>%
   spread(key = plot_id, value = mean_weight)
-
+surveys_meanweight_species_plot_wide2 <- surveys_meanweight_species_plot %>%
+  spread(key = species_id, value = mean_weight)
