@@ -181,3 +181,12 @@ surveys_meanweight_species_plot_wide2 <- surveys_meanweight_species_plot %>%
 #gather wide data to long format
 surveys_meanweight_species_plot_long <- surveys_meanweight_species_plot_wide %>%
   gather(key = plot_number, value = m_weight, -species_id)
+
+surveys_meanweight_species_plot_long2 <- surveys_meanweight_species_plot_wide %>%
+  gather(key = plot_number, value = m_weight, "1":"24")
+
+#Challenge
+#spread surveys where there is a row for each plot_id and columns for years
+#value is the number of species_id per plot
+#summarize first
+#use the function n_distinct (use ? for help as needed)
