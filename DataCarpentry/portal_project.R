@@ -167,6 +167,12 @@ select(year, genus, species_id, weight) #get year, genus, species_id, weight
 
 #WIDE TO LONG TO WIDE DATA
 #Challenge
-#mean weight of each species in each plot
-
+#mean weight of each species_id in each plot_id
+surveys_meanweight_species_plot <- surveys %>% 
+  filter(!is.na(weight)) %>%
+  group_by(plot_id,species_id) %>%
+  summarize(mean_weight = mean(weight))
+#now spread so people can read it
+surveys_meanweight_species_plot_wide <- surveys_meanweight_species_plot %>%
+  spread(key = plot_id, value = mean_weight)
 
