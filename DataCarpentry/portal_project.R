@@ -177,3 +177,7 @@ surveys_meanweight_species_plot_wide <- surveys_meanweight_species_plot %>%
   spread(key = plot_id, value = mean_weight)
 surveys_meanweight_species_plot_wide2 <- surveys_meanweight_species_plot %>%
   spread(key = species_id, value = mean_weight)
+
+#gather wide data to long format
+surveys_meanweight_species_plot_long <- surveys_meanweight_species_plot_wide %>%
+  gather(key = plot_number, value = m_weight, -species_id)
