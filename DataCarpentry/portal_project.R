@@ -229,5 +229,7 @@ colnames(plots_db)
 colnames(species_db)
 
 #get the number of rodents in each plot
-left_join(surveys_db, species_db) %>% filter(taxa == "Rodent") %>%
-  group_by(taxa,year)
+rodents_per_plot <- left_join(surveys_db, species_db) %>% filter(taxa == "Rodent") %>%
+  group_by(plot_id,year) %>% tally %>% collect()
+
+#
