@@ -138,3 +138,10 @@ surveys %>% count(plot_id)
 surveys %>% filter(!is.na(weight)) %>%
   group_by(species_id) %>%
   summarise(mean_weight = mean(weight))
+
+surveys %>% filter(!is.na(weight)) %>%
+  group_by(species_id, sex) %>%
+  summarise(mean_weight = mean(weight),
+            min_weight = min(weight),
+            max_weight = max(weight)) %>%
+  arrange(desc(mean_weight))
