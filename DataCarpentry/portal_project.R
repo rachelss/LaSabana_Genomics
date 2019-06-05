@@ -164,3 +164,9 @@ surveys %>% filter(!is.na(weight)) %>%
 group_by(year) %>% #group by year
 filter(weight == max(weight)) %>% #get the row with the max weight in each group
 select(year, genus, species_id, weight) #get year, genus, species_id, weight
+
+#WIDE TO LONG TO WIDE DATA
+#Challenge
+#mean weight of each species in each plot
+
+
