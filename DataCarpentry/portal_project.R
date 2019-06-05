@@ -221,3 +221,9 @@ nrow(surveys_db)
 #get samples weight <5, select a few cols
 surveys_db %>% filter(weight < 5) %>% select(species_id, year) %>%
   collect()
+
+colnames(surveys_db)
+plots_db <- tbl(mammals,"plots")
+species_db <- tbl(mammals,"species")
+colnames(plots_db)
+colnames(species_db)
