@@ -194,8 +194,10 @@ surveys %>% group_by(plot_id, year) %>%
   summarise(n_species = n_distinct(species_id)) %>%
   spread(key = year, value = n_species)
 
-surveys %>% count(plot_id, year, species_id) %>%
+surveys_numsp_year_plot <- surveys %>% count(plot_id, year, species_id) %>%
   count(plot_id, year) %>% spread(year,n)
 
-#Challenge
+#Challenge: gather the wide data above
 #each row is a unique year and plot_id
+surveys_numsp_year_plot_long <- surveys_numsp_year_plot %>%
+  gather(year, number_spp_caught, -plot_id)
