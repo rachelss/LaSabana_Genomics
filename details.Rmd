@@ -24,3 +24,5 @@ rsschwartz@uri.edu
 [Modern Dive](http://moderndive.com/). Chester Ismay and Albert Y. Kim. 2017.
 
 [R for Data Science](http://r4ds.had.co.nz/). Hadley Wickham and Garrett Grolemund. 2016. O’Reilly Media.
+
+[Fundamentals of Data Visualization](https://serialmentor.com/dataviz/). Claus O. Wilke. 2019. O’Reilly Media.
