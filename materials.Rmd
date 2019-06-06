@@ -25,3 +25,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Day 2 (June 5)
 * [Download spreadsheet data](https://ndownloader.figshare.com/files/2252083)
 * Database url: https://ndownloader.figshare.com/files/2292171
+
+### Day 3 (June 6)
+* [Presentation slides](https://docs.google.com/presentation/d/1JFtv-pxMjxIgRpnd86MfBY8mKY3enDpuSolzaIwh1-0/edit?usp=sharing)
