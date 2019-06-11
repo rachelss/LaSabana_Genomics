@@ -12,20 +12,31 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Prior to workshop day 1 (June 3)
+### Prior to workshop
 * [Read Software Carpentry Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html)
 * [Follow setup instructions for R](https://datacarpentry.org/r-socialsci/setup.html)
 
-### Day 1 (June 4)
+### June 4
 * [Slides](https://docs.google.com/presentation/d/1l-84JaWBtBrbY-ts3rnKypRLO8YF0skyCHQfkhMPWZE/edit?usp=sharing)
 * [Data Carpenty materials](https://datacarpentry.org/R-ecology-lesson/index.html)
 * Location of data: url="https://ndownloader.figshare.com/files/2292169"
 * [Day's R script](https://github.com/rachelss/LaSabana_Genomics/blob/master/DataCarpentry/portal_project.R)
 
-### Day 2 (June 5)
+### June 5
 * [Download spreadsheet data](https://ndownloader.figshare.com/files/2252083)
 * Database url: https://ndownloader.figshare.com/files/2292171
 * [Data Visualization slides](dataviz.html)
 
-### Day 3 (June 6)
+### June 6
 * [Presentation slides](https://docs.google.com/presentation/d/1JFtv-pxMjxIgRpnd86MfBY8mKY3enDpuSolzaIwh1-0/edit?usp=sharing)
+
+### June 10
+* [Genomics slides](https://docs.google.com/presentation/d/1e9DEu2cjiHFzlHkhAm2I55EvAV-z5f3431a7OKiMq8I/edit?usp=sharing)
+* [Genome data slides](https://docs.google.com/presentation/d/1TLpMkC5wOxtkNyusr_TUbxUIZ5BUwio6iYzr8vRc4t8/edit?usp=sharing)
+* [Data Carpentry Genomics: Workshop overview](https://datacarpentry.org/genomics-workshop/)
+* [Workshop data](https://docs.google.com/presentation/d/1h-8RIWCI_ojHRzeXAc_lRPaCr2WWDl4xtfp22BeY3Zg/edit?usp=sharing)
+* [Data Carpentry Genomics: Shell Intro](https://datacarpentry.org/shell-genomics/)
+
+### June 11
+* Metadata link: https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.csv
+* [Processing Genome data](https://datacarpentry.org/wrangling-genomics/)
