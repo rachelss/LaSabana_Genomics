@@ -47,3 +47,11 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Links to IGV talk](https://www.youtube.com/watch?v=ZPyeHzomH-U)
 * [Link to Variant talk](https://www.youtube.com/watch?v=q9J2tYoZf4s&list=PLbhQIHW7hn4jheSXtExOb07RJVvekH4gz&index=6&t=0s)
 * [GATK pipeline](https://software.broadinstitute.org/gatk/)
+
+### June 13
+* [Abyss](https://github.com/bcgsc/abyss)
+* [Linuxbrew](https://docs.brew.sh/Homebrew-on-Linux)
+* [Abyss example data](http://www.bcgsc.ca/platform/bioinfo/software/abyss/releases/1.3.4/test-data.tar.gz)
+* [Quickstart Google Cloud](https://cloud.google.com/compute/docs/quickstart-linux)
+* [Start with Digital Ocean cloud (includes RStudio)](https://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean/)
+
