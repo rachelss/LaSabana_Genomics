@@ -55,3 +55,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Quickstart Google Cloud](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Start with Digital Ocean cloud (includes RStudio)](https://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean/)
 
+### June 14
+* [Genome annotation](https://ncbiinsights.ncbi.nlm.nih.gov/2019/03/13/run-prokaryotic-genome-annotation-pipeline/)
+* [Version control tutorial](http://swcarpentry.github.io/git-novice/)
+* [Version control tutorial in Spanish](https://swcarpentry.github.io/git-novice-es/)
